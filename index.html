@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristate Contracting | Professional Concrete Contractor in Madison, IN</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        concrete: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        construction: {
+                            gold: '#d97706',
+                            amber: '#f59e0b',
+                            dark: '#0f172a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 41, 59, 0.90) 100%);
+        }
+        .light-grid {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Sticky Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="https://static.wixstatic.com/media/780163_63dfd69e3aa84c22b97399f25894c9e7~mv2.png" alt="Tristate Contracting Logo" class="h-12 w-auto rounded-xl shadow-md group-hover:scale-105 transition-all object-contain">
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">Home</a>
+                    <a href="#about" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">About</a>
+                    <a href="#services" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">Services</a>
+                    <a href="#why-us" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">Why Us</a>
+                    <a href="#gallery" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">Projects</a>
+                    <a href="#contact" class="font-semibold text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">Contact</a>
+                </nav>
+
+                <!-- CTA & Phone Button -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:8125992677" class="hidden xl:flex items-center gap-2 text-slate-900 font-bold text-sm hover:text-amber-600 transition-colors">
+                        <span class="w-9 h-9 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i class="fa-solid fa-phone"></i></span>
+                        (812) 599-2677
+                    </a>
+                    <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 text-xs uppercase tracking-widest">
+                        Request a Free Estimate
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-700 hover:text-amber-600 focus:outline-none p-2 rounded-lg bg-slate-100">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-3 pb-6 space-y-3 shadow-xl">
+            <div class="pb-3 border-b border-slate-100 flex items-center justify-between">
+                <img src="https://static.wixstatic.com/media/780163_63dfd69e3aa84c22b97399f25894c9e7~mv2.png" alt="Tristate Contracting Logo" class="h-10 w-auto rounded-lg">
+                <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Menu</span>
+            </div>
+            <a href="#home" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">Home</a>
+            <a href="#about" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">About</a>
+            <a href="#services" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">Services</a>
+            <a href="#why-us" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">Why Us</a>
+            <a href="#gallery" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">Projects</a>
+            <a href="#contact" class="block py-2 text-slate-800 font-bold hover:text-amber-600 uppercase text-sm">Contact</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <a href="tel:8125992677" class="flex items-center gap-2 text-slate-900 font-extrabold text-base">
+                    <i class="fa-solid fa-phone text-amber-600"></i> (812) 599-2677
+                </a>
+                <a href="#contact" class="bg-amber-500 text-slate-950 text-center font-extrabold py-3.5 rounded-xl shadow uppercase text-xs tracking-widest">
+                    Request a Free Estimate
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[92vh] flex items-center pt-28 pb-20 bg-slate-950 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=2000&q=80" alt="Professional concrete construction banner" class="w-full h-full object-cover object-center opacity-40 scale-105">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+            <div class="max-w-3xl">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-400 text-xs sm:text-sm font-bold mb-6 backdrop-blur-md shadow-lg">
+                    <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                    <span>25+ Years Experience • Quality Workmanship • 96% Recommended</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-none mb-6">
+                    Built Strong. <span class="text-amber-500 underline decoration-amber-500/40 underline-offset-8">Built to Last.</span>
+                </h1>
+
+                <p class="text-lg sm:text-xl font-bold text-slate-200 mb-4">
+                    25 Years of Trusted Concrete Construction Across Southern Indiana & Northern Kentucky.
+                </p>
+
+                <p class="text-slate-300 text-base sm:text-lg mb-10 leading-relaxed font-normal">
+                    From driveways and foundations to slabs, walls, curbs, and parking areas, Tristate Contracting delivers dependable concrete workmanship built for the long haul.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-black px-8 py-4 rounded-xl shadow-2xl hover:shadow-amber-500/30 transition-all text-center text-sm uppercase tracking-widest flex items-center justify-center gap-3 transform hover:-translate-y-0.5">
+                        <span>Request a Free Estimate</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:8125992677" class="bg-slate-900/90 hover:bg-slate-900 border border-slate-700 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all text-center text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-phone text-amber-400"></i>
+                        <span>Call (812) 599-2677</span>
+                    </a>
+                </div>
+
+                <!-- Quick highlights -->
+                <div class="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold border border-amber-500/20">
+                            <i class="fa-solid fa-award text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-white font-extrabold text-lg">25+ Years</div>
+                            <div class="text-slate-400 text-xs font-semibold">Hands-on Mastery</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold border border-amber-500/20">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-white font-extrabold text-lg">Madison, IN</div>
+                            <div class="text-slate-400 text-xs font-semibold">& Tri-State Area</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 lg:py-32 bg-white light-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                <!-- Image Side -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                        <img src="image_e0ea29.png" alt="Professional concrete construction team at work" class="w-full h-[420px] sm:h-[500px] object-cover">
+                    </div>
+                    <!-- Decorative background shapes -->
+                    <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-amber-500/10 rounded-3xl -z-0 hidden sm:block"></div>
+                    <div class="absolute -top-6 -left-6 w-48 h-48 bg-slate-200/80 rounded-full -z-0 hidden sm:block"></div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="lg:col-span-6">
+                    <span class="text-amber-600 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-4">About Tristate Contracting</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
+                        25 Years of Concrete Experience You Can Trust
+                    </h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6 font-normal">
+                        Tristate Contracting provides dependable residential and commercial concrete services throughout Southern Indiana and Northern Kentucky with decades of hands-on expertise. We pride ourselves on uncompromising quality workmanship, long-lasting durability, meticulous attention to detail, and customer service you can always rely on.
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed mb-8 font-normal">
+                        Whether you need a rock-solid foundation for a new build, a flawless decorative driveway, or rugged concrete slabs and parking areas, our experienced crew handles every project with precision and professionalism from start to finish.
+                    </p>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200">
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-slate-900 mb-1">25+</div>
+                            <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Years Exp.</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-amber-600 mb-1">96%</div>
+                            <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Recommended</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-slate-900 mb-1">11</div>
+                            <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Counties</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-amber-600 mb-1">100%</div>
+                            <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Quality Focus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-3">Our Core Expertise</span>
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                    Professional Concrete Services
+                </h2>
+                <p class="text-slate-400 text-lg font-normal">
+                    Reliable residential and commercial concrete construction tailored to withstand heavy traffic, weather, and time.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" alt="Concrete Slabs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Residential & Commercial</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-square text-amber-500"></i> Concrete Slabs
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Durable, level concrete slabs designed and poured with precision for garages, pole barns, sheds, and commercial applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=600&q=80" alt="Concrete Driveways" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Built For Heavy Traffic</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-road text-amber-500"></i> Driveways
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Strong, attractive concrete driveways built to handle everyday vehicular traffic, harsh weather conditions, and look stunning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Concrete Walls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Structural Integrity</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-shield text-amber-500"></i> Concrete Walls
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Reliable concrete walls constructed with superior strength, absolute precision, and engineered durability in mind.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Foundations" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Rock Solid Bases</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-house-chimney text-amber-500"></i> Foundations
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Solid concrete foundations designed to provide a dependable, perfectly level base for all types of construction projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Concrete Curbs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Commercial & Roads</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-cubes text-amber-500"></i> Concrete Curbs
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Professionally installed curbs for properties, roadways, parking areas, and commercial complexes with clean finishes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-xl hover:border-amber-500 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Parking Areas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-black bg-amber-500 text-slate-950 px-3 py-1 rounded-lg uppercase tracking-wider">Heavy Duty Use</span>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="text-2xl font-black text-white mb-3 flex items-center gap-3">
+                                <i class="fa-solid fa-square-parking text-amber-500"></i> Parking Areas
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                                Durable concrete parking solutions designed for long-term performance, maximum load capacity, and heavy daily use.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-7 pb-7 pt-0">
+                        <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 font-black text-xs uppercase tracking-widest hover:text-amber-300 transition-colors">
+                            <span>Get a Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA Banner in Services -->
+            <div class="mt-16 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl p-8 sm:p-12 text-slate-950 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+                <div>
+                    <h3 class="text-2xl sm:text-4xl font-black mb-2">Have a Custom Concrete Project in Mind?</h3>
+                    <p class="text-slate-900 font-bold text-base">We provide tailored solutions for both residential and commercial clients across IN and KY.</p>
+                </div>
+                <a href="#contact" class="bg-slate-950 hover:bg-slate-900 text-white font-black px-8 py-4 rounded-2xl shadow-xl transition-all transform hover:scale-105 whitespace-nowrap uppercase text-xs tracking-widest">
+                    Request Free Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-24 lg:py-32 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-3">The Tristate Advantage</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+                    Why Tristate Contracting?
+                </h2>
+                <p class="text-slate-600 text-lg font-normal">
+                    When you hire Tristate Contracting, you are partnering with seasoned experts dedicated to durability, integrity, and flawless execution.
+                </p>
+            </div>
+
+            <!-- Feature Blocks Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:border-amber-500/50 group">
+                    <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">25+ Years of Experience</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm font-normal">
+                        Over a quarter-century of hands-on mastery in concrete construction, ensuring your project is engineered and built right the first time.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:border-amber-500/50 group">
+                    <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Reliable Concrete Work</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm font-normal">
+                        Dependable scheduling, transparent communication, and solid workmanship you can trust from consultation to final cleanup.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:border-amber-500/50 group">
+                    <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Quality-Focused Craftsmanship</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm font-normal">
+                        Rigorous attention to sub-base preparation, proper reinforcement, mixing standards, and smooth, professional finishing.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:border-amber-500/50 group">
+                    <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Residential & Commercial</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm font-normal">
+                        Equipped to handle both residential home improvements and large-scale commercial concrete foundations and parking areas.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all hover:border-amber-500/50 group md:col-span-2 lg:col-span-2">
+                    <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Serving Indiana & Kentucky Communities</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm font-normal">
+                        Proudly serving Madison, Indiana and surrounding counties across Southern Indiana and Northern Kentucky including Madison, IN; Switzerland County, IN; Trimble County, KY; Clark County, IN; Jackson County, IN; Carrollton, KY; Scott County, IN; Oldham County, KY; Jefferson County, IN; Jennings County, IN; and Henry County, KY.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Process Section -->
+    <section class="py-24 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-3">Simple & Seamless</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+                    Our 3-Step Concrete Process
+                </h2>
+                <p class="text-slate-600 text-lg font-normal">
+                    Getting your concrete project built right is straightforward with our proven approach.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200 relative group hover:bg-white hover:shadow-xl transition-all">
+                    <div class="text-6xl font-black text-amber-500/20 mb-4 group-hover:text-amber-500/40 transition-colors">01</div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Request Your Estimate</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">
+                        Contact Tristate Contracting by phone or online form to discuss your concrete project requirements and schedule a consultation.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200 relative group hover:bg-white hover:shadow-xl transition-all">
+                    <div class="text-6xl font-black text-amber-500/20 mb-4 group-hover:text-amber-500/40 transition-colors">02</div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Plan Your Project</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">
+                        We review site specifications, measure dimensions, and determine the right concrete solution tailored precisely to your property needs.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200 relative group hover:bg-white hover:shadow-xl transition-all">
+                    <div class="text-6xl font-black text-amber-500/20 mb-4 group-hover:text-amber-500/40 transition-colors">03</div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Get It Built Right</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">
+                        Our expert crew executes professional concrete work focused on superior strength, rock-solid durability, and immaculate finishing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="gallery" class="py-24 lg:py-32 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-3">Our Workmanship</span>
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                    Concrete Project Gallery
+                </h2>
+                <p class="text-slate-400 text-lg font-normal">
+                    A showcase of recent residential and commercial concrete projects built across Indiana and Kentucky.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80" alt="Concrete Driveway Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Driveway Construction</span>
+                        <h3 class="text-white text-xl font-bold">Residential Concrete Driveway</h3>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="Concrete Slab Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Concrete Slabs</span>
+                        <h3 class="text-white text-xl font-bold">Commercial & Shop Slabs</h3>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Concrete Foundation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Foundations & Walls</span>
+                        <h3 class="text-white text-xl font-bold">Structural Foundation Pour</h3>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Commercial Parking Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Parking Solutions</span>
+                        <h3 class="text-white text-xl font-bold">Commercial Parking Area</h3>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Concrete Curbs & Sidewalks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Curbs & Flatwork</span>
+                        <h3 class="text-white text-xl font-bold">Precision Concrete Curbs</h3>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden h-80 shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=800&q=80" alt="Skilled Concrete Crew" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <span class="text-amber-400 text-xs font-black uppercase tracking-wider mb-1">Expert Craftsmanship</span>
+                        <h3 class="text-white text-xl font-bold">Skilled Construction Team</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 lg:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-700 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
+                    <i class="fa-solid fa-star text-amber-500"></i> 96% Recommended Rating
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+                    What Our Clients Say
+                </h2>
+                <p class="text-slate-600 text-lg font-normal">
+                    Read feedback from property owners who trust Tristate Contracting for their concrete needs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base leading-relaxed italic mb-8 font-normal">
+                            "Tristate Contracting poured a large concrete slab for our new workshop. Their crew was punctual, highly professional, and the finish is exceptionally level and sturdy. Highly recommend their 25 years of experience!"
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-extrabold text-slate-900 text-sm">Commercial Property Owner</div>
+                            <div class="text-slate-500 text-xs font-semibold">Madison, IN</div>
+                        </div>
+                        <span class="text-[11px] bg-emerald-50 text-emerald-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider">Verified Project</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base leading-relaxed italic mb-8 font-normal">
+                            "We had our old driveway replaced with a brand new concrete driveway. The transformation is incredible. The team was courteous, worked efficiently, and left the worksite spotless. True master craftsmen."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-extrabold text-slate-900 text-sm">Residential Homeowner</div>
+                            <div class="text-slate-500 text-xs font-semibold">Switzerland County, IN</div>
+                        </div>
+                        <span class="text-[11px] bg-emerald-50 text-emerald-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider">Verified Project</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base leading-relaxed italic mb-8 font-normal">
+                            "Finding dependable contractors can be difficult, but Tristate Contracting exceeded every expectation on our foundation and retaining walls. Professional communication and rock-solid results."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <div class="font-extrabold text-slate-900 text-sm">General Contractor</div>
+                            <div class="text-slate-500 text-xs font-semibold">Carrollton, KY</div>
+                        </div>
+                        <span class="text-[11px] bg-emerald-50 text-emerald-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider">Verified Project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width CTA Section -->
+    <section class="py-20 bg-slate-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=1600&q=80" alt="Concrete background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight mb-4">
+                Ready to Start Your Concrete Project?
+            </h2>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-10 font-normal">
+                Get in touch with Tristate Contracting today for a fast, dependable concrete estimate from our experienced team.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-slate-950 font-black px-8 py-4 rounded-2xl shadow-2xl transition-all transform hover:scale-105 uppercase text-xs tracking-widest">
+                    Request a Free Estimate
+                </a>
+                <a href="tel:8125992677" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-bold px-8 py-4 rounded-2xl transition-all flex items-center justify-center gap-3 uppercase text-xs tracking-wider">
+                    <i class="fa-solid fa-phone text-amber-400"></i>
+                    <span>Call Now: (812) 599-2677</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Estimate Section -->
+    <section id="contact" class="py-24 lg:py-32 bg-white light-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold uppercase tracking-widest text-xs px-3.5 py-1.5 rounded-full bg-amber-500/10 inline-block mb-3">Get In Touch</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+                    Request Your Free Concrete Estimate
+                </h2>
+                <p class="text-slate-600 text-lg font-normal">
+                    Contact us today via phone, email, or fill out the form below to discuss your upcoming residential or commercial project.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 bg-slate-950 text-white p-8 sm:p-12 rounded-3xl shadow-2xl flex flex-col justify-between border border-slate-800">
+                    <div>
+                        <h3 class="text-3xl font-black mb-4">Tristate Contracting LLC</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-10 font-normal">
+                            Professional concrete contractors serving Madison, Indiana and surrounding counties across Southern Indiana and Northern Kentucky for over 25 years.
+                        </p>
+
+                        <div class="space-y-8">
+                            <a href="tel:8125992677" class="flex items-start gap-4 group">
+                                <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors border border-amber-500/20">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase font-extrabold text-slate-400 tracking-wider">Phone Number</div>
+                                    <div class="text-white font-black text-xl">(812) 599-2677</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:tristatecontracting2@yahoo.com" class="flex items-start gap-4 group">
+                                <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors border border-amber-500/20">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase font-extrabold text-slate-400 tracking-wider">Email Address</div>
+                                    <div class="text-white font-bold text-sm sm:text-base break-all">tristatecontracting2@yahoo.com</div>
+                                </div>
+                            </a>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center text-xl shrink-0 border border-amber-500/20">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs uppercase font-extrabold text-slate-400 tracking-wider">Office Location</div>
+                                    <div class="text-white font-bold text-base">232 Meadow Lane<br>Madison, IN 47250</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-slate-800">
+                        <div class="text-xs uppercase font-extrabold text-amber-400 mb-2 tracking-widest">Service Areas</div>
+                        <p class="text-slate-300 text-xs leading-relaxed font-normal">
+                            Madison, IN • Switzerland County, IN • Trimble County, KY • Clark County, IN • Jackson County, IN • Carrollton, KY • Scott County, IN • Oldham County, KY • Jefferson County, IN • Jennings County, IN • Henry County, KY.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Estimate Form Column -->
+                <div class="lg:col-span-7 bg-white p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl">
+                    <form id="estimate-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-2">Your Name *</label>
+                                <input type="text" required class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900 font-medium" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-2">Phone Number *</label>
+                                <input type="tel" required class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900 font-medium" placeholder="(812) 000-0000">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-2">Email Address *</label>
+                                <input type="email" required class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900 font-medium" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-2">Project Type *</label>
+                                <select required class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900 font-medium">
+                                    <option value="">Select project type...</option>
+                                    <option value="Concrete Slabs">Concrete Slabs</option>
+                                    <option value="Driveways">Driveways</option>
+                                    <option value="Concrete Walls">Concrete Walls</option>
+                                    <option value="Foundations">Foundations</option>
+                                    <option value="Concrete Curbs">Concrete Curbs</option>
+                                    <option value="Parking Areas">Parking Areas</option>
+                                    <option value="Other Concrete Project">Other Concrete Project</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-wider text-slate-700 mb-2">Project Details & Location *</label>
+                            <textarea rows="4" required class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900 font-medium" placeholder="Please describe your project size, timeline, and location..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-black py-4 rounded-2xl shadow-xl transition-all uppercase text-xs tracking-widest transform hover:-translate-y-0.5">
+                            Request Free Estimate
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="form-success" class="hidden mt-6 bg-emerald-50 border border-emerald-200 text-emerald-900 p-8 rounded-3xl text-center">
+                        <i class="fa-solid fa-circle-check text-4xl text-emerald-600 mb-3"></i>
+                        <h4 class="font-black text-xl mb-2">Estimate Request Received!</h4>
+                        <p class="text-sm font-normal">Thank you for contacting Tristate Contracting. We will review your project details and contact you shortly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps Location Banner -->
+            <div class="mt-16 rounded-3xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100 p-6 sm:p-8 text-center">
+                <div class="flex items-center justify-center gap-2 text-slate-900 font-black text-lg mb-2">
+                    <i class="fa-solid fa-map-pin text-amber-600"></i> Proudly Serving Madison, Indiana & Surrounding Tri-State Communities
+                </div>
+                <p class="text-slate-600 text-sm max-w-2xl mx-auto font-normal">
+                    Based in Madison, IN (232 Meadow Lane), providing top-tier concrete solutions across Southern Indiana and Northern Kentucky.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://static.wixstatic.com/media/780163_63dfd69e3aa84c22b97399f25894c9e7~mv2.png" alt="Tristate Contracting Logo" class="h-12 w-auto rounded-xl shadow">
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-normal">
+                        Professional concrete contractor with 25+ years of experience serving Madison, Indiana and surrounding areas across Indiana and Kentucky.
+                    </p>
+                    <p class="text-amber-500 font-bold text-xs uppercase tracking-wider">“Built Strong. Built to Last.”</p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-extrabold text-xs mb-4 uppercase tracking-widest">Quick Links</h4>
+                    <ul class="space-y-2 text-sm font-medium">
+                        <li><a href="#home" class="hover:text-amber-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-amber-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Our Services</a></li>
+                        <li><a href="#why-us" class="hover:text-amber-400 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#gallery" class="hover:text-amber-400 transition-colors">Project Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-amber-400 transition-colors">Request Estimate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="text-white font-extrabold text-xs mb-4 uppercase tracking-widest">Services</h4>
+                    <ul class="space-y-2 text-sm font-medium">
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Concrete Slabs</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Driveways</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Concrete Walls</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Foundations</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Concrete Curbs</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition-colors">Parking Areas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="text-white font-extrabold text-xs mb-4 uppercase tracking-widest">Contact Info</h4>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-amber-500"></i>
+                            <a href="tel:8125992677" class="hover:text-white transition-colors">(812) 599-2677</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-amber-500"></i>
+                            <a href="mailto:tristatecontracting2@yahoo.com" class="hover:text-white transition-colors break-all">tristatecontracting2@yahoo.com</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
+                            <span>232 Meadow Lane, Madison, IN 47250</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 font-medium">
+                <p>&copy; 2026 Tristate Contracting LLC. All rights reserved.</p>
+                <p>Website: tristatecontracting.net</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('estimate-form');
+            const successBox = document.getElementById('form-success');
+            
+            form.style.display = 'none';
+            successBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
